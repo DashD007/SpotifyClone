@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;  
+}
+body{
+    background-color: antiquewhite;
+}
+
+nav{
+    font-family: 'Poppins', sans-serif;
+}
+nav ul{
+    /* margin-top: 10px; */
+    /* margin-left:15px; */
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color:black;
+    color:white;
+}
+nav ul li{
+    margin-left:10px;
+    margin-right: 20px;
+    font-size: 0.9rem;
+}
+.brand img{
+    height:40px;
+    width:40px;
+}
+.brand{
+    display:flex;
+    align-items:center;
+}
+nav ul li span{
+    margin-left:10px;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.container{
+    min-height: 63vh;
+    background-color: aliceblue;
+    color:white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin:12px auto;
+    width:70%;
+    border-radius: 12px;
+    padding:15px;
+    background-image: url('bg.jpg');
+    background-size:cover;
+}
+.SongList{
+    width:80%;
+}
+.title{
+    font-size: 25px;
+}
+.songItemContainer{
+    margin-top: 35px;
+}
+.container .SongList .songItem{
+    display: flex;
+    height:40px;
+    width:70%;
+    background-color: white;
+    color:black;
+    border-radius: 35px;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    padding-right:12px;
+    font-size: 12px;
+}
+.container .SongList .songItem img{
+    height:30px;
+    width:30px;
+    margin: 0 12px;
+    border-radius: 50%;
+}
+.songlistplay i{
+    cursor:pointer;
+}
+.bottom{
+    background-color: black;
+    position: sticky;
+    height:100px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bottom .icons{
+    display: flex;
+    justify-content: center; 
+}
+.bottom .icons i{
+    color:white;
+    margin:5px 10px;
+    cursor: pointer;  
+}
+.bottom .songInfo{
+    color: white;
+    position: absolute;
+    left:10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+.bottom input[type="range"]{
+    width:80%;
+    color:greenyellow;
+    cursor: pointer;
+}
